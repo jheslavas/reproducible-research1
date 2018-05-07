@@ -2,7 +2,7 @@
 title: "to_reviewers.md"
 author: "Javier Eslava Schmalbach"
 date: "6/5/2018"
-output: html_document
+output: github_document
 ---
 
 This is a document to explain difficulties that I had uploading my files from the master github to the remote repository. It was not possible to get the figures included in the Rmd file, at the remote repository. 

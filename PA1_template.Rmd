@@ -31,8 +31,13 @@ library(data.table)
 library(plyr)
 library(dplyr)
 library(lubridate)
-         
-        here()
+  ```       
+  ```{r file path, echo = FALSE}   
+     here()
+   ```
+   
+   ```{r loadind the database, echo = TRUE}
+   
         activity <- read.csv("activity.csv", header = TRUE)
 ```
 

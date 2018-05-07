@@ -24,13 +24,45 @@ Dataset: [Activity monitoring data [52K]]("https://d396qusza40orc.cloudfront.net
 
 
 ```r
+library(here)
+```
+
+```
+## here() starts at /Users/ESLAVA/Desktop/Programming in R/Learning2
+```
+
+```
+## 
+## Attaching package: 'here'
+```
+
+```
+## The following object is masked from 'package:lubridate':
+## 
+##     here
+```
+
+```
+## The following object is masked from 'package:plyr':
+## 
+##     here
+```
+
+```r
 library(data.table)
 library(plyr)
 library(dplyr)
 library(lubridate)
-
-        activity <- read.csv("./activity.csv", header = TRUE)
 ```
+  
+  ```
+  ## [1] "/Users/ESLAVA/Desktop/Programming in R/Learning2"
+  ```
+   
+   
+   ```r
+        activity <- read.csv("activity.csv", header = TRUE)
+   ```
 
         ### 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
@@ -160,7 +192,7 @@ The median of total number of steps taken per day is 10765
 
 
 ```r
-activity <- read.csv("./activity.csv", header = TRUE)
+activity <- read.csv("activity.csv", header = TRUE)
 activity$date <- as.POSIXct(strptime(activity$date, "%Y-%m-%d"))
 
 ok <- complete.cases(activity)

@@ -2,7 +2,7 @@
 **title: "Peer-graded Assignment: Course Project 1, of the Course Reproducible Research"**
 author: "Javier Eslava Schmalbach"
 date: "5/5/2018"
-output: html_document
+output: github_document
 ------
 
 #[Instructions taken from the course]("https://www.coursera.org/learn/reproducible-research/peer/gYyPt/course-project-1")
@@ -25,30 +25,6 @@ Dataset: [Activity monitoring data [52K]]("https://d396qusza40orc.cloudfront.net
 
 ```r
 library(here)
-```
-
-```
-## here() starts at /Users/ESLAVA/Desktop/Programming in R/Learning2
-```
-
-```
-## 
-## Attaching package: 'here'
-```
-
-```
-## The following object is masked from 'package:lubridate':
-## 
-##     here
-```
-
-```
-## The following object is masked from 'package:plyr':
-## 
-##     here
-```
-
-```r
 library(data.table)
 library(plyr)
 library(dplyr)

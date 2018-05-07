@@ -1,0 +1,20 @@
+---
+title: "to_reviewers.md"
+author: "Javier Eslava Schmalbach"
+date: "6/5/2018"
+output: html_document
+---
+
+This is a document to explain difficulties that I had uploading my files from the master github to the remote repository. It was not possible to get the figures included in the Rmd file, at the remote repository. 
+
+I looked for suggestions at stackoverflow, but all of them did not work. 
+
+Finally, I upload this document with the URL address showing the html file published in Rpbus
+
+[This is the address]("http://rpubs.com/jheslavas/386874")
+
+Please check it, before you grade my work. 
+
+Thanks
+
+Javier Eslava-Schmalbach

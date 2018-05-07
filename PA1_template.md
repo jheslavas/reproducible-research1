@@ -25,92 +25,10 @@ Dataset: [Activity monitoring data [52K]]("https://d396qusza40orc.cloudfront.net
 
 ```r
 library(data.table)
-```
-
-```
-## data.table 1.10.4.3
-```
-
-```
-##   The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way
-```
-
-```
-##   Documentation: ?data.table, example(data.table) and browseVignettes("data.table")
-```
-
-```
-##   Release notes, videos and slides: http://r-datatable.com
-```
-
-```r
 library(plyr)
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:plyr':
-## 
-##     arrange, count, desc, failwith, id, mutate, rename, summarise,
-##     summarize
-```
-
-```
-## The following objects are masked from 'package:data.table':
-## 
-##     between, first, last
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(lubridate)
-```
 
-```
-## Warning: package 'lubridate' was built under R version 3.4.4
-```
-
-```
-## 
-## Attaching package: 'lubridate'
-```
-
-```
-## The following object is masked from 'package:plyr':
-## 
-##     here
-```
-
-```
-## The following objects are masked from 'package:data.table':
-## 
-##     hour, isoweek, mday, minute, month, quarter, second, wday,
-##     week, yday, year
-```
-
-```
-## The following object is masked from 'package:base':
-## 
-##     date
-```
-
-```r
         activity <- read.csv("./activity.csv", header = TRUE)
 ```
 

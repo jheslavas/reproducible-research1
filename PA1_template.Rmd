@@ -25,12 +25,15 @@ Dataset: [Activity monitoring data [52K]]("https://d396qusza40orc.cloudfront.net
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ```{r loadind the data, echo = TRUE}
+
+library(here)
 library(data.table)
 library(plyr)
 library(dplyr)
 library(lubridate)
-
-        activity <- read.csv("./activity.csv", header = TRUE)
+         
+        here()
+        activity <- read.csv("activity.csv", header = TRUE)
 ```
 
         ### 2. Process/transform the data (if necessary) into a format suitable for your analysis
@@ -103,7 +106,7 @@ The median of total number of steps taken per day is `r median_steps`
         ### 1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with 𝙽𝙰s)
 
 ```{r loading the raw data again and arranging the date, echo=TRUE}
-activity <- read.csv("./activity.csv", header = TRUE)
+activity <- read.csv("activity.csv", header = TRUE)
 activity$date <- as.POSIXct(strptime(activity$date, "%Y-%m-%d"))
 
 ok <- complete.cases(activity)

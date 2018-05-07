@@ -1,5 +1,5 @@
 ------
-*title: "Peer-graded Assignment: Course Project 1, of the Course Reproducible Research"*
+**title: "Peer-graded Assignment: Course Project 1, of the Course Reproducible Research"**
 author: "Javier Eslava Schmalbach"
 date: "5/5/2018"
 output: html_document
@@ -102,7 +102,7 @@ This is the function to ignore missings
         median_steps <- median(steps.daily$total)
 ```
 
-*Answers*: 
+**Answers**: 
 The mean of total number of steps taken per day is 1.0766189 &times; 10<sup>4</sup>
 The median of total number of steps taken per day is 10765
 
@@ -149,7 +149,7 @@ The median of total number of steps taken per day is 10765
         steps.interval1 <- steps.interval[max.interval,]
 ```
 
-*Answer*: On average across all the days in the dataset, the interval and mean of that interval with the maximun number of steps are  835, 206.1698113, respectively
+**Answer**: On average across all the days in the dataset, the interval and mean of that interval with the maximun number of steps are  835, 206.1698113, respectively
 
 
 ##Imputing missing values
@@ -172,7 +172,7 @@ not_ok
 ## [1] 2304
 ```
 
-*Answer*: The total number of missing values in the dataset is  2304
+**Answer**: The total number of missing values in the dataset is  2304
 
 
         ### 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
@@ -222,7 +222,7 @@ To execute this commands, I used a function (impute.mean taken from answer 38 at
  after <- sum(is.na(activity))
 ```
 
-*Comment*: Even though, the command generated some warnings, this was executed correctly, as it can be seen counting NA's, respectively,  before 2304 and after 0 using the command. 
+**Comment**: Even though, the command generated some warnings, this was executed correctly, as it can be seen counting NA's, respectively,  before 2304 and after 0 using the command. 
 
         ### 3.Create a new dataset that is equal to the original dataset but with the missing data filled in. 
 
@@ -275,7 +275,7 @@ median1 <- median(steps.daily1$total)
 ```
 
 
-*Answer*: As it can be seen, there are not differences with the previous values, as in the histogram as in the mean  1.0766189 &times; 10<sup>4</sup> and median values  1.0766189 &times; 10<sup>4</sup>. 
+**Answer**: As it can be seen, there are not differences with the previous values, as in the histogram as in the mean  1.0766189 &times; 10<sup>4</sup> and median values  1.0766189 &times; 10<sup>4</sup>. 
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -303,7 +303,7 @@ Now, I will check if the factor variable was well-created.
 ## weekday weekend 
 ##   12960    4608
 ```
-*Comment*: It is OK
+**Comment**: It is OK
 
         ### 2. Make a panel plot containing a time series plot (i.e. 𝚝𝚢𝚙𝚎 = "𝚕") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). 
 
@@ -320,7 +320,7 @@ library(lattice)
 
 ![plot of chunk aggregating the data](figure/aggregating the data-1.png)
 
-*Comment*: Maximum values are on weekdays. However averages values of steps for different intervals are higher on weekends. 
+**Comment**: Maximum values are on weekdays. However averages values of steps for different intervals are higher on weekends. 
 
 
 

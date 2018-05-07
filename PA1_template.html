@@ -149,9 +149,16 @@ $(document).ready(function () {
 <div id="the-specific-instructions-to-follow-are" class="section level2">
 <h2>The specific instructions to follow are:</h2>
 <pre><code>    ### 1. Load the data (i.e. 𝚛𝚎𝚊𝚍.𝚌𝚜𝚟())</code></pre>
+<pre class="r"><code>library(here)</code></pre>
+<pre><code>## here() starts at /Users/ESLAVA/Desktop/Programming in R/Learning2</code></pre>
 <pre class="r"><code>library(data.table)
-library(plyr)
-library(dplyr)</code></pre>
+library(plyr)</code></pre>
+<pre><code>## 
+## Attaching package: 'plyr'</code></pre>
+<pre><code>## The following object is masked from 'package:here':
+## 
+##     here</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>
 <pre><code>## The following objects are masked from 'package:plyr':
@@ -178,10 +185,17 @@ library(dplyr)</code></pre>
 ## 
 ##     hour, isoweek, mday, minute, month, quarter, second, wday,
 ##     week, yday, year</code></pre>
+<pre><code>## The following object is masked from 'package:here':
+## 
+##     here</code></pre>
 <pre><code>## The following object is masked from 'package:base':
 ## 
 ##     date</code></pre>
-<pre class="r"><code>        activity &lt;- read.csv(&quot;./activity.csv&quot;, header = TRUE)</code></pre>
+<pre class="r"><code>        here()</code></pre>
+<pre><code>## Warning: 'here' is deprecated; use 'now' instead. Deprecated in version
+## '1.5.6'.</code></pre>
+<pre><code>## [1] &quot;2018-05-06 21:56:12 -05&quot;</code></pre>
+<pre class="r"><code>        activity &lt;- read.csv(&quot;activity.csv&quot;, header = TRUE)</code></pre>
 <pre><code>    ### 2. Process/transform the data (if necessary) into a format suitable for your analysis</code></pre>
 <pre class="r"><code>        str(activity)</code></pre>
 <pre><code>## 'data.frame':    17568 obs. of  3 variables:
@@ -253,7 +267,7 @@ library(dplyr)</code></pre>
 <pre><code>    ### Note that there are a number of days/intervals where there are missing values (coded as 𝙽𝙰). The presence of missing days may introduce bias into some calculations or summaries of the data.
 
     ### 1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with 𝙽𝙰s)</code></pre>
-<pre class="r"><code>activity &lt;- read.csv(&quot;./activity.csv&quot;, header = TRUE)
+<pre class="r"><code>activity &lt;- read.csv(&quot;activity.csv&quot;, header = TRUE)
 activity$date &lt;- as.POSIXct(strptime(activity$date, &quot;%Y-%m-%d&quot;))
 
 ok &lt;- complete.cases(activity)
